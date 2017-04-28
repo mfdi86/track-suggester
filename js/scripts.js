@@ -7,19 +7,19 @@ $(document).ready(function() {
     var leftRight = $("input[name=left-right]:checked").val();
 
     if (appeal === "decorating") {
-      $("#css_design").show();
+      $("#css_design").fadeIn(2000);
       $("#java").hide();
       $("#php").hide();
     }
     if (paintingLogic === "logic") {
       $("#css_design").hide();
-      $("#java").show();
+      $("#java").fadeIn(2000);
       $("#php").hide();
     }
     if (careMore === "inner-workings") {
       $("#css_design").hide();
       $("#java").hide();
-      $("#php").show();
+      $("#php").fadeIn(2000);
     }
 
   event.preventDefault();
